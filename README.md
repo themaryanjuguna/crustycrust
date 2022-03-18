@@ -33,7 +33,7 @@ The Application will enable a customer to:
 - See a checkout button that when clicked shows the total amount charged for the orders.
 
 ## Known Bugs
-At the moment no bugs have been detected, however feel free to report any typos or rookie mistakes via the contacts provided below or by creating a new issue <a href="https://themaryanjuguna.github.io/crustycrust/issues/new">here</a>
+At the moment no bugs have been detected, however feel free to report any typos or rookie mistakes via the contacts provided below or by creating a new issue <a href="https://github.com/themaryanjuguna/crustycrust/issues">here</a>
 
 ## Support and contact details
 If they run into any issues or have questions, ideas or concerns.  Please email themaryanjuguna@gmail.com
