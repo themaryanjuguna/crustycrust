@@ -1,4 +1,4 @@
-# crustycrust Pizza 
+# Crusty Crust Pizza
 
 ## Description
 A web application that enables my customers to order and choose different sizes of pizzas and different toppings, checkout button that displays the total amount charged for the orders when clicked.
@@ -8,13 +8,13 @@ Maryanne Njuguna `Find me on Twitter and Linkedin @themaryanjuguna`
 
 ## Setup/Installation Requirements
 - Have git installed.
-- Clone this repository to a location in your file system. `git clone https://github.com/themaryanjuguna/crustycrust.git`
+- Clone this repository to a location in your file system. `git clone <https://github.com/themaryanjuguna/crustycrust.git/>`
 - Open terminal command line then navigate to the root folder of the application. `cd crustycrust`
 - Open `index.html` on your Browser.
 - Have a text editor installed e.g VS Code, Atom, Dreamweaver
 
 ### Live link
-`https://themaryanjuguna.github.io/crustycrust/`
+<https://themaryanjuguna.github.io/crustycrust/>
 
 
 ### Technologies Used
