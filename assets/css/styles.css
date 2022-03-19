@@ -1,5 +1,18 @@
 body{
     background: goldenrod;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container-fluid{
+    background: rgba(255, 0, 0, 0.486);
+    color: white;
+
+}
+
+h2{
+    font-family: 'Damion', cursive;
+    margin: 50px;
+    text-align: center;
 }
 
 div {
@@ -22,10 +35,6 @@ div {
     box-sizing: border-box;
 }
 
-.container-fluid{
-    background: rgba(255, 0, 0, 0.486);
-    align-items: flex;
-}
 
 .btn{
     padding: 10px 50px 10px 50px; 

@@ -20,18 +20,31 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto+Condensed&family=Roboto+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="p-3 mb-2 text-dark">
-      <!--Choose your pizza-->
-      <div class="container-fluid">
-        <marquee width="80%" direction="left" height="50px">SPECIAL OFFER!!! SPECIAL OFFER!!!</marquee>
-        <div class="row">
-          <!-- Three columns of text -->
-          <div class="row gy-2 gx-3 align-items-center">            
+    <!--Choose your pizza-->
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="mt-5">"Do good. Be nice. Order pizza. Repeat."</h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <marquee width="80%" direction="left" height="50px"
+        >SPECIAL OFFER!!! SPECIAL OFFER!!!</marquee
+      >
+      <div class="row">
+        <!-- Three columns of text -->
+        <div class="row gy-2 gx-3 align-items-center">
           <!-- /.col-lg-4 -->
-           <div class="col-lg-4">
-              <div>
-                <img 
+          <div class="col-lg-4">
+            <div>
+              <img
                 class="rounded-circle"
                 width="200"
                 height="200"
@@ -42,20 +55,20 @@
                 preserveAspectRatio="xMidYMid slice"
                 focusable="false"
               />
-              <h3 class="mt-2">Pizza Sizes</h3>
-              </div> 
-              <div>
-                <div class="form-select form-check-inline mt-2">
-                  <select class="form-control" id="sizes">
-                    <option selected>Choose...</option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                    <option>Mega</option>
-                  </select>
-                </div>
-              </div>             
-           </div>
+              <h3 class="mt-2">SIZES</h3>
+            </div>
+            <div>
+              <div class="form-select form-check-inline mt-2">
+                <select class="form-control" id="sizes">
+                  <option selected>Choose...</option>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                  <option>Mega</option>
+                </select>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4">
             <div>
               <img
@@ -82,55 +95,66 @@
                 </select>
               </div>
             </div>
-          </div>     
+          </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div>
               <img
-              class="rounded-circle"
-              width="200"
-              height="200"
-              src="/assets/img/pizza3.jpg"
-              alt="pizza3"
-              role="img"
-              aria-label="img: 200x200"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="true"
-            />
-            <h3 class="mt-2">TOPPINGS</h3>
+                class="rounded-circle"
+                width="200"
+                height="200"
+                src="/assets/img/pizza3.jpg"
+                alt="pizza3"
+                role="img"
+                aria-label="img: 200x200"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="true"
+              />
+              <h3 class="mt-2">TOPPINGS</h3>
             </div>
-           <div>
-            <div class="form-select form-check-inline mt-2">
-              <select class="form-control" id="toppings">
-                <option selected>Choose...</option>
-                <option>Pepperoni</option>
-                <option>Chickent Tikka</option>
-                <option>Vegan</option>
-                <option>Sweetcorn</option>
-              </select>
+            <div>
+              <div class="form-select form-check-inline mt-2">
+                <select class="form-control" id="toppings">
+                  <option selected>Choose...</option>
+                  <option>Pepperoni</option>
+                  <option>Chickent Tikka</option>
+                  <option>Vegan</option>
+                  <option>Sweetcorn</option>
+                </select>
+              </div>
             </div>
-           </div>            
           </div>
           <!-- /.col-lg-4 -->
-          <br>
+          <br />
           <div class="text-center">
-            <button class="btn btn-warning btn-md order" type="submit">Order</button>
+            <button class="btn btn-warning btn-md order" type="submit">
+              Order
+            </button>
           </div>
-          <br>
+          <br />
         </div>
         <!-- /.row -->
       </div>
     </div>
-    <div class="container-fluid">100% wide until fluid breakpoint</div>
-    <div class="container-xl">100% wide until extra large breakpoint</div>
-    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
-    <div class="container-sm">100% wide until small breakpoint</div>
-    <div class="container-md"> 100% wide until small breakpoint   </div>
+    <div class="container-fluid">
+      <div class="row d-flex p-2 text-center">
+        <address>
+          <strong class="contacts">Crusty Crust Limited</strong><br />
+          Gichungo, Muhuri Road,<br />
+          Dagoretti South, Nairobi<br />
+          <br /><br />
+          <h6>
+            Enjoyed our Services? Write to us. Let us know your experiene<br />
+            <a href="mailto:themaryanjuguna@gmail.com"
+              >feedback@crustycrust.ke</a
+            >
+          </h6>
+        </address>
+      </div>
+    </div>
 
-    <div class="container text-center">
-      <footer
-        class="d-flex flex-wrap py-3 my-4 border-top"
-      >
+    <div class="container">
+      <footer class="row text-center d-flex flex-wrap py-3 my-4 border-top">
         <div class="col-md-4 d-flex">
           <span class="text-muted">&copy; 2022, Crusty Crust Pizza Ltd </span>
         </div>
