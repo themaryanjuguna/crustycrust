@@ -22,16 +22,115 @@
     />
   </head>
   <body class="p-3 mb-2 text-dark">
-    <div class="container">header</div>
-    <div class="container">content</div>
-    <div class="container"></div>
-    <div class="container"></div>
-
-
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">
+      <!--Choose your pizza-->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Three columns of text -->
+          <div class="row gy-2 gx-3 align-items-center">            
+          <!-- /.col-lg-4 -->
+           <div class="col-lg-4">
+              <div>
+                <img 
+                class="rounded-circle"
+                width="200"
+                height="200"
+                src="/assets/img/pizza1.jpg"
+                alt="pizza1"
+                role="img"
+                aria-label="img: 200x200"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <h3 class="mt-2">Pizza Sizes</h3>
+              </div> 
+              <div>
+                <div class="form-select form-check-inline mt-2">
+                  <select class="form-control" id="sizes">
+                    <option selected>Choose...</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Mega</option>
+                  </select>
+                </div>
+              </div>             
+           </div>
+          <div class="col-lg-4">
+            <div>
+              <img
+                class="rounded-circle"
+                width="200"
+                height="200"
+                src="/assets/img/pizza2.jpg"
+                alt="pizza2"
+                role="img"
+                aria-label="img: 200x200"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <h3 class="mt-2">CRUST</h3>
+            </div>
+            <div>
+              <div class="form-select d-inline-flex p-2 mt-2">
+                <select class="form-control" id="crustype">
+                  <option selected>Choose...</option>
+                  <option>Thin</option>
+                  <option>Cracker</option>
+                  <option>Sourdough</option>
+                  <option>Thick</option>
+                </select>
+              </div>
+            </div>
+          </div>     
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div>
+              <img
+              class="rounded-circle"
+              width="200"
+              height="200"
+              src="/assets/img/pizza3.jpg"
+              alt="pizza3"
+              role="img"
+              aria-label="img: 200x200"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="true"
+            />
+            <h3 class="mt-2">TOPPINGS</h3>
+            </div>
+           <div>
+            <div class="form-select form-check-inline mt-2">
+              <select class="form-control" id="toppings">
+                <option selected>Choose...</option>
+                <option>Pepperoni</option>
+                <option>Chickent Tikka</option>
+                <option>Vegan</option>
+                <option>Sweetcorn</option>
+              </select>
+            </div>
+           </div>            
+          </div>
+          <!-- /.col-lg-4 -->
+          <br>
+          <div class="text-center">
+            <button class="btn btn-warning btn-md order" type="submit">Order</button>
+          </div>
+          <br>
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">
+      100% wide until extra extra large breakpoint
+    </div>
+    <div class="container-fluid">100% wide until fluid breakpoint</div>
 
     <div class="container">
       <footer
-        class="d-flex flex-wrap justify-content-between text-center py-3 my-4 border-top"
+        class="d-flex flex-wrap text-center py-3 my-4 border-top"
       >
         <div class="col-md-4 d-flex">
           <span class="text-muted">&copy; 2022, Crusty Crust Pizza Ltd </span>
