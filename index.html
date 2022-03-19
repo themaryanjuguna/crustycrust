@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Maryanne Njuguna" />
 
-    <title>Crusty Crust - Order Your Pizza</title>
+    <title>Crusty Crust - Place your Order</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- CSS only -->
     <link
@@ -27,129 +27,142 @@
       rel="stylesheet"
     />
   </head>
-  <body class="p-3 mb-2 text-dark">
+  <body class="p-3 mb-2">
     <!--Choose your pizza-->
+
     <div class="container-fluid">
-      <div class="row">
-        <h2 class="mt-5">"Do good. Be nice. Order pizza. Repeat."</h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <marquee width="80%" direction="left" height="50px"
-        >SPECIAL OFFER!!! SPECIAL OFFER!!!</marquee
-      >
-      <div class="row">
-        <!-- Three columns of text -->
-        <div class="row gy-2 gx-3 align-items-center">
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div>
-              <img
-                class="rounded-circle"
-                width="200"
-                height="200"
-                src="/assets/img/pizza1.jpg"
-                alt="pizza1"
-                role="img"
-                aria-label="img: 200x200"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              />
-              <h3 class="mt-2">SIZES</h3>
-            </div>
-            <div>
-              <div class="form-select form-check-inline mt-2">
-                <select class="form-control" id="sizes">
-                  <option selected>Choose...</option>
-                  <option>Small</option>
-                  <option>Medium</option>
-                  <option>Large</option>
-                  <option>Mega</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div>
-              <img
-                class="rounded-circle"
-                width="200"
-                height="200"
-                src="/assets/img/pizza2.jpg"
-                alt="pizza2"
-                role="img"
-                aria-label="img: 200x200"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              />
-              <h3 class="mt-2">CRUST</h3>
-            </div>
-            <div>
-              <div class="form-select d-inline-flex p-2 mt-2">
-                <select class="form-control" id="crustype">
-                  <option selected>Choose...</option>
-                  <option>Thin</option>
-                  <option>Cracker</option>
-                  <option>Sourdough</option>
-                  <option>Thick</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div>
-              <img
-                class="rounded-circle"
-                width="200"
-                height="200"
-                src="/assets/img/pizza3.jpg"
-                alt="pizza3"
-                role="img"
-                aria-label="img: 200x200"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="true"
-              />
-              <h3 class="mt-2">TOPPINGS</h3>
-            </div>
-            <div>
-              <div class="form-select form-check-inline mt-2">
-                <select class="form-control" id="toppings">
-                  <option selected>Choose...</option>
-                  <option>Pepperoni</option>
-                  <option>Chickent Tikka</option>
-                  <option>Vegan</option>
-                  <option>Sweetcorn</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-lg-4 -->
-          <br />
-          <div class="text-center">
-            <button class="btn btn-warning btn-md order" type="submit">
-              Order
-            </button>
-          </div>
-          <br />
+      <div class="container-md">
+        <div class="row">
+          <h1 class="display-2 text-center mt-5">CRUSTY CRUST PIZZA</h1>
+          <h2 class="mt-5">"Do good. Be nice. Order pizza. Repeat."</h2>
         </div>
-        <!-- /.row -->
       </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row d-flex p-2 text-center">
-        <address>
-          <strong class="contacts">Crusty Crust Limited</strong><br />
-          Gichungo, Muhuri Road,<br />
-          Dagoretti South, Nairobi<br />
-          <br /><br />
-          <h6>
-            Enjoyed our Services? Write to us. Let us know your experiene<br />
-            <a href="mailto:themaryanjuguna@gmail.com"
-              >feedback@crustycrust.ke</a
-            >
-          </h6>
-        </address>
+
+      <div class="container-md">
+        <div class="row">
+          <marquee width="80%" direction="left" height="50px"
+            >SPECIAL OFFER!!! SPECIAL OFFER!!!</marquee
+          >
+          <div class="row">
+            <!-- Three columns of text -->
+            <div class="row gy-2 gx-3 align-items-center">
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div>
+                  <img
+                    class="rounded-circle"
+                    width="200"
+                    height="200"
+                    src="/assets/img/pizza1.jpg"
+                    alt="pizza1"
+                    role="img"
+                    aria-label="img: 200x200"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  />
+                  <h3 class="mt-2">SIZES</h3>
+                </div>
+                <div>
+                  <div class="form-select form-check-inline mt-2">
+                    <select class="form-control" id="sizes">
+                      <option selected>Choose...</option>
+                      <option value="300">Small</option>
+                      <option value="800">Medium</option>
+                      <option value="1000">Large</option>
+                      <option value="1500">Mega</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div>
+                  <img
+                    class="rounded-circle"
+                    width="200"
+                    height="200"
+                    src="/assets/img/pizza2.jpg"
+                    alt="pizza2"
+                    role="img"
+                    aria-label="img: 200x200"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  />
+                  <h3 class="mt-2">CRUST</h3>
+                </div>
+                <div>
+                  <div class="form-select d-inline-flex p-2 mt-2">
+                    <select class="form-control" id="crustype">
+                      <option selected>Choose...</option>
+                      <option value="400">Thin</option>
+                      <option value="500">Cracker</option>
+                      <option value="1500">Sourdough</option>
+                      <option value="600">Thick</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div>
+                  <img
+                    class="rounded-circle"
+                    width="200"
+                    height="200"
+                    src="/assets/img/pizza3.jpg"
+                    alt="pizza3"
+                    role="img"
+                    aria-label="img: 200x200"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="true"
+                  />
+                  <h3 class="mt-2">TOPPINGS</h3>
+                </div>
+                <div>
+                  <div class="form-select form-check-inline mt-2">
+                    <select class="form-control" id="toppings">
+                      <option selected>Choose...</option>
+                      <option>Pepperoni</option>
+                      <option>Chickent Tikka</option>
+                      <option>Vegan</option>
+                      <option>Sweetcorn</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-lg-4 -->
+              <br />
+              <div class="text-center">
+                <button class="btn btn-warning btn-md order" type="submit">
+                  Order
+                </button>
+              </div>
+              <br />
+            </div>
+            <!-- /.row -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container-md">
+        <div class="row">
+          <div class="container">
+            <div class="row d-flex p-2 text-center">
+              <address>
+                <strong class="contacts">Crusty Crust Limited</strong><br />
+                Gichungo, Muhuri Road,<br />
+                Dagoretti South, Nairobi<br />
+                <br /><br />
+                <h6>
+                  Enjoyed our Services? Write to us. Share your experience with
+                  ys<br />
+                  <a href="mailto:themaryanjuguna@gmail.com"
+                    >feedback@crustycrust.ke</a
+                  >
+                </h6>
+              </address>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
