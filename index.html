@@ -65,13 +65,12 @@
                   <h3 class="mt-2">SIZES</h3>
                 </div>
                 <div>
-                  <div class="form-select form-check-inline mt-2">
-                    <select class="form-control" id="size">
-                      <option selected>Choose...</option>
-                      <option value="200">Small</option>
-                      <option value="300">Medium</option>
-                      <option value="400">Large</option>
-                      <option value="500">Mega</option>
+                  <div class="d-inline-flex mt-2">
+                    <select class="form-control form-select size" placeholder="Choose...">
+                      <option label="Small" value="200">Small</option>
+                      <option label="medium" value="300">Medium</option>
+                      <option label="large" value="400">Large</option>
+                      <option label="Mega" value="500">Mega</option>
                     </select>
                   </div>
                 </div>
@@ -93,13 +92,12 @@
                   <h3 class="mt-2">CRUST</h3>
                 </div>
                 <div>
-                  <div class="form-select d-inline-flex p-2 mt-2">
-                    <select class="form-control" id="crust">
-                      <option selected>Choose...</option>
-                      <option value="400">Thin</option>
-                      <option value="400">Cracker</option>
-                      <option value="600">Sourdough</option>
-                      <option value="500">Thick</option>
+                  <div class="d-inline-flex p-2 mt-2">
+                    <select class="form-control crust" placeholder="Choose...">
+                      <option label="thin" value="400">Thin</option>
+                      <option label="cracker" value="400">Cracker</option>
+                      <option label="sourdough" value="600">Sourdough</option>
+                      <option label="Thick" alue="500">Thick</option>
                     </select>
                   </div>
                 </div>
@@ -122,23 +120,22 @@
                   <h3 class="mt-2">TOPPINGS</h3>
                 </div>
                 <div>
-                  <div class="form-select form-check-inline mt-2">
-                    <select class="form-control" id="topping">
-                      <option selected>Choose...</option>
-                      <option value="500">Pepperoni</option>
-                      <option value="500">Chickent Tikka</option>
-                      <option value="300">Vegan</option>
-                      <option value="300">Beef</option>
+                  <div class="d-inline-flex mt-2">
+                    <select class="form-control topping" placeholder="Choose...">
+                      <option label="pepperoni" value="500">Pepperoni</option>
+                      <option label="Chicken-tikka" value="500">Chickent Tikka</option>
+                      <option label="Chicken" value="300">Vegan</option>
+                      <option label="Beef" value="300">Beef</option>
                     </select>
                   </div>
                 </div>
               </div>
 
           <!--ADD order BUTTON-->
-          <div class="row orderbtn">
-            <div class="col-md-5 offset-md-5 mt-3">
-              <div class="input-group  mb-3">
-                <button class="btn btn-warning" style="width: 120px;" type="submit" id="orderBtn">order</button>
+          <div class="row">
+            <div class="col-md-5 offset-md-5 mt-2">
+              <div class="input-group mb-3">
+                <button class="btn btn-warning orderbutton" style="width: 150px;" type="submit">order</button>
               </div>
             </div>
           </div>
@@ -146,11 +143,10 @@
           <div class="container-md">
 
          <!--order summary-->
-          <div id="orderSummary">
+          <div class="order-summary">
             <h3 class="fs-3 text-center mt-2"> Your Order Summary</h3>
-            <span class="size"></span><span class="crust"></span><span class="topping"></span>
-
-            <table id="orderTable" class="table text-white">
+          </div>
+            <table class="table text-white">
               <thead>
                 <tr>
                   <th scope="col">ORDER NO.</th>
@@ -160,41 +156,38 @@
                   <th scope="col">TOTAL</th>
                 </tr>
             </thead>
-            <tbody id="pizzaData">
+            <tbody class="pizzaorder">
                 <tr>
                   <th scope="row">1</th>
-                  <td id="sizeData"></td>
-                  <td id="toppingsData"></td>
-                  <td id="crustData"></td>
-                  <td id="totalAmount"></td>
+                  <td id="size"></td>
+                  <td id="topping"></td>
+                  <td id="crust"></td>
+                  <td id="total"></td>
                 </tr>
             </tbody>
-
             </table>
-
-
-          </div>
         </div>
 
           <!--ADD PIZZA BUTTON-->
-            <div class="row" id="addBtn">
+            <div class="row">
             <div class="col-md-5 offset-md-5 mt-5">
               <div class="input-group mb-3">
-                <button class="btn btn-warning" type="button">Add Pizza</button>
+                <button class="btn btn-warning add-pizza" style="width: 120px;" type="button">Add Pizza</button>
               </div>
             </div>
           </div>
           
           <!--delivery option-->
-          <div class="row" id="deliveryOption">
+          <div class="row" class="other-options">
             <div class="col-md-8 offset-md-4 d-flex mt-5">
-              <div class="input-group mb-3">
+              <div class="input-group location mb-3">
                 <p class="fs-5 text-center">Would you like your to be delivered?</p>
                 <div class="input-group offset-md-5 mb-3">
-                  <button class="btn btn-warning" type="submit" value="500" style="width: 80px;" id="btnYes">yes</button> 
-                  <button class="btn btn-outline-warning text-dark mx-3" style="width: 80px;" type="submit" id="btnNo">No</button>
+                  <button class="btn btn-warning yesbutton" type="submit" value="500" style="width: 80px;">yes</button> 
+                  <button class="btn btn-outline-warning nobutton text-dark mx-3" style="width: 80px;" type="submit">No</button>
                 </div>
-                <div id="deliveryAlert">
+              
+                <div class="deliveryalert">
                   <p class="text-center">We deliver at flat fee of KES 500</p> 
                 </div>
                 </div>
@@ -206,7 +199,7 @@
           </div>
         </div>
         <!--DELIIVERY BUTTON-->
-        <div id="deliveryAddress" class="container-md mt-5">
+        <div class="container-md deliveryaddress mt-5">
           <div class="row">
             <div class="col-md-6 offset-md-3">
               <div class="input-group mb-3">
@@ -217,7 +210,7 @@
           </div>
 
            <!--ADD PIZZA BUTTON-->
-           <div class="row" id="checkout">
+           <div class="row" class="checkout">
             <div class="col-md-5 offset-md-5 mt-5">
               <div class="input-group mb-3">
                 <button class="btn btn-warning" type="button">Check out</button>
@@ -227,8 +220,6 @@
 
 
           </div>
-
-
 
       <div class="container-md contacts">
         <div class="row">
@@ -259,8 +250,10 @@
           <span class="fs-6 text-center">&copy; 2022, Crusty Crust Pizza Ltd </span>
       </footer>
     </div>
-    <script src="assets/js/scripts.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-3.6.0.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

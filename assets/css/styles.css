@@ -7,7 +7,7 @@ body{
 }
 
 .container-fluid{
-    background: rgba(255, 0, 0, 0.61);
+    background: rgba(255, 0, 0, 0.774);
     color: white;
     margin: 0 auto;
     width: 80%;
@@ -81,8 +81,9 @@ div {
 }
 
 /* peek- a - boo Styles */
-#orderSummary, #deliveryAlert, 
-#deliveryOption, #deliveryAddress, 
-#addBtn {
+.order-summary, .table, .add-pizza, .deliveryalert, 
+.other-options, .deliveryaddress, .location,
+.add-pizza{
     display: none;
 }
+
