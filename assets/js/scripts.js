@@ -11,6 +11,7 @@ $(document).ready(function() {
 
       $("table").show();
       $(".add-pizza").show();
+      $(".checkout").show();
       $(".orderbutton").hide();
 
       $("#size").html($(".size option:selected").text() + " - " + pizzaSize);
@@ -46,13 +47,14 @@ $(document).ready(function() {
         $(".btn.checkout").click(function() {
           $(".btn.add-pizza").hide();
           $(".btn.checkout").hide();
-          $(".other-options").show();
+          $(".totalalert").show();
+          $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
-          $(".other-options .deliveryaddress").hide();
+          $(".deliveryaddress").hide();
           totalAmount = totalAmount + total;
 
-          $(".other-options fs-4").html(totalAmount);
+          $(".totalalert fs-4").html(totalAmount);
         });
 
 
@@ -60,8 +62,10 @@ $(document).ready(function() {
           $(".other-options fs-4").hide();
           $(".btn.yes").hide();
           $(".btn.no").hide();
-          $(".other-options .deliveryaddress").show();
-          $(".other-options fs-4").html(totalAmount + 200);
+          $(".deliveryalert").show();
+          $(".deliveryaddress").show();
+
+          $(".other-options fs-4").html(totalAmount + 500);
         });
 
         $(".nobutton").click(function() {

@@ -81,8 +81,8 @@ div {
 }
 
 /* peek- a - boo Styles */
-.order-summary, .table, .add-pizza, .deliveryalert, 
-.other-options, .deliveryaddress, .location,
+.order-summary, .table, .add-pizza, .checkout, .deliveryalert, 
+.other-options, .deliveryaddress, .location, .totalalert,
 .add-pizza{
     display: none;
 }
