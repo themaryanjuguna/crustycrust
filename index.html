@@ -132,34 +132,59 @@
                   </div>
                 </div>
               </div>
-              <!-- /.col-lg-4 -->
-              <br />
-              <div class="text-center">
-                <button class="btn btn-warning btn-md orderBtn" type="submit">
-                  Order
-                </button>
-              </div>
-              <br />
 
-              <div id="order">
-                <h3 class="fs-3 text-center">Order Summary</h3>
-                <span class="size"></span><span class="crust"></span><span class="topping"></span>
+          <!--ADD order BUTTON-->
+          <div class="row orderbtn">
+            <div class="col-md-5 offset-md-5 mt-3">
+              <div class="input-group  mb-3">
+                <button class="btn btn-warning" type="submit" id="orderBtn">order</button>
               </div>
             </div>
-            <!-- /.row -->
+          </div>
+
+          <!--order summary-->
+          <div id="orderSummary">
+            <h3 class="fs-3 text-center mt-2">Order Summary</h3>
+            <span class="size"></span><span class="crust"></span><span class="topping"></span>
           </div>
         </div>
+
+          <!--ADD PIZZA BUTTON-->
+            <div class="row">
+            <div class="col-md-5 offset-md-5 mt-5">
+              <div class="input-group mb-3">
+                <button class="btn btn-warning" type="button" id="addBtn">Add Pizza</button>
+              </div>
+            </div>
+          </div>
+          
+          <!--delivery option-->
+          <div class="row" id="deliveryOption">
+            <div class="col-md-5 offset-md-5 mt-5">
+              <div class="input-group mb-3">
+                <p class="fs-5">Would you like your to be delivered? We deliver at flat fee of KES 500</p>
+                <div class="input-group mb-3">
+                  <button class="btn btn-warning" type="submit" value="500" style="width: 80px;" id="btnYes">yes</button> 
+                  <button class="btn btn-outline-warning text-dark mx-3" style="width: 80px;" type="submit" id="btnNo">No</button>
+                </div>
+              </div>
+            </div>
+          </div>
         
+            
+          </div>
+        </div>
+        <!--DELIIVERY BUTTON-->
         <div class="container-md delivery mt-5">
           <div class="row">
             <div class="col-md-4 offset-md-4">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="ENTER DELIVERY ADDRESS HERE" aria-label="ENTER DELIVERY ADDRESS HERE" aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="ENTER DELIVERY ADDRESS HERE" aria-label="ENTER DELIVERY ADDRESS HERE" aria-describedby="deliveryBtn">
                 <button class="btn btn-warning" type="button" id="deliveryBtn">Button</button>
               </div>
             </div>
           </div>
-        
+
 
 
       <div class="container-md contacts">

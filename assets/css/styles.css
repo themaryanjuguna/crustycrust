@@ -51,10 +51,10 @@ div {
     text-transform: uppercase;
 }
 
-.btn .order{
+.btn .orderbtn{
     padding: 10px 50px 10px 50px; 
     margin-bottom: 50px;
-
+    color: aliceblue !important;
 
 }
 
@@ -62,9 +62,9 @@ div {
     font-family: 'Roboto Mono', monospace;
 }
 
-#order {
+/* #orderSummary {
     display: none;
-}
+} */
 
 .footer{
     text-align: center;
