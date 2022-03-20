@@ -1,12 +1,18 @@
+  
 body{
-    background: goldenrod;
-    font-family: 'Roboto Mono', monospace;
+    background-image: url('https://img.freepik.com/free-photo/beige-wooden-textured-flooring-background_53876-128545.jpg');
+    background-size: cover;
+    font-family: 'Roboto condensed', monospace;
+    font-weight: 800px;
 }
 
 .container-fluid{
-    background: rgba(255, 0, 0, 0.486);
+    background: rgba(255, 0, 0, 0.61);
     color: white;
-
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
@@ -17,6 +23,10 @@ h2{
 
 div {
     display: block;
+}
+
+.marquee{
+    color: yellow;
 }
 
 .col-lg-4 {
@@ -35,9 +45,31 @@ div {
     box-sizing: border-box;
 }
 
-
 .btn{
+    color: red;
+    font: small-caps;
+    text-transform: uppercase;
+}
+
+.btn .order{
     padding: 10px 50px 10px 50px; 
     margin-bottom: 50px;
-    color: red
+
+
+}
+
+.reciept{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#order {
+    display: none;
+}
+
+.footer{
+    text-align: center;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    font: small-caps
 }
