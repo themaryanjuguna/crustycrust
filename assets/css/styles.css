@@ -54,6 +54,7 @@ div {
     color: red;
     font: small-caps;
     text-transform: uppercase;
+    align-items: center;
 
 }
 
@@ -80,9 +81,8 @@ div {
 }
 
 /* peek- a - boo Styles */
-#orderSummary,
-#deliveryAlert, #deliveryOption, #deliveryAddress, #addBtn
-
-{
+#orderSummary, #deliveryAlert, 
+#deliveryOption, #deliveryAddress, 
+#addBtn {
     display: none;
 }
