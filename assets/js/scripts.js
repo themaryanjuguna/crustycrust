@@ -47,32 +47,35 @@ $(document).ready(function() {
         $(".btn.checkout").click(function() {
           $(".btn.add-pizza").hide();
           $(".btn.checkout").hide();
-          $(".totalalert").show();
+          $(".totalalert fs-4").show();
           $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
           $(".deliveryaddress").hide();
           totalAmount = totalAmount + total;
 
-          $(".totalalert fs-4").html(totalAmount);
+          $(".totalalert .fs-3 span").html(totalAmount);
         });
 
 
         $(".yesbutton").click(function() {
-          $(".other-options fs-4").hide();
-          $(".btn.yes").hide();
-          $(".btn.no").hide();
-          $(".deliveryalert").show();
+          $(".totalalert fs-4").hide();
+          $(".yesbutton").hide();
+          $(".nobutton").hide();
+          $(".location").hide()
+          $(".totalalert .fs-4").show();
           $(".deliveryaddress").show();
 
-          $(".other-options fs-4").html(totalAmount + 500);
+          $(".totalalert fs-4 span").html(totalAmount + 500);
         });
 
         $(".nobutton").click(function() {
-          $(".other-options h5").hide();
-          $(".btn.yes").hide();
-          $(".btn.no").hide();
-          $(".other-options .deliveryaddress").show();
+          $(".totalalert fs-3").hide();
+          $(".yesbutton").hide();
+          $(".nobutton").hide();
+          $(".totalalert .fs-4").hide();
+          $(".totalalert .fs-5").hide();
+          $(".totalalert .fs-3 span").show();
         });
 
     });
