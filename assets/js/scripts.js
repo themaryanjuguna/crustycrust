@@ -47,11 +47,13 @@ $(document).ready(function() {
         $(".btn.checkout").click(function() {
           $(".btn.add-pizza").hide();
           $(".btn.checkout").hide();
-          $(".totalalert .fs-4").show();
+          $(".totalalert").show();
+          $(".totalalert .fs-3").show();
+          $(".totalalert .fs-4 .fs-5").hide();
           $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
-          $(".deliveryaddress").hide();
+          $(".deliverybutton").hide();
           totalAmount = totalAmount + total;
 
           $(".totalalert .fs-3 span").html(totalAmount);
@@ -59,12 +61,12 @@ $(document).ready(function() {
 
 
         $(".yesbutton").click(function() {
-          $(".totalalert .fs-4").hide();
+          $(".totalalert .fs-4").show();
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".location").hide()
           $(".totalalert .fs-5").show();
-          $(".deliveryaddress").show();
+          $(".deliverybutton").show();
           $(".totalalert .fs-4 span").html(totalAmount + 500);
         });
 
@@ -72,10 +74,19 @@ $(document).ready(function() {
           $(".totalalert .fs-3").show();
           $(".yesbutton").hide();
           $(".nobutton").hide();
+          $(".location").hide();
           $(".totalalert .fs-4").hide();
           $(".totalalert .fs-5").hide();
           $(".totalalert .fs-3 span").show();
         });
+
+        $(".deliverybutton").click(function() {
+          var location = $(".totalalert.location input").val();
+          $(".totalalert .fs-5").show();
+          $(".totalalert .location").hide();
+          $(".totalalert .fs-5 span").html(location);
+        });
+    
 
     });
   
