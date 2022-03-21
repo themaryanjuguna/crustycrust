@@ -65,7 +65,7 @@ $(document).ready(function() {
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".location").hide()
-          $(".totalalert .fs-5").show();
+          $(".totalalert .fs-5").hide();
           $(".deliverybutton").show();
           $(".totalalert .fs-4 span").html(totalAmount + 500);
         });
@@ -77,14 +77,15 @@ $(document).ready(function() {
           $(".location").hide();
           $(".totalalert .fs-4").hide();
           $(".totalalert .fs-5").hide();
-          $(".totalalert .fs-3 span").show();
+          $(".totalalert .fs-3 span", '<p>Thank you for your Order</p>').show();
         });
 
-        $(".deliverybutton").click(function() {
-          var location = $(".totalalert.location input").val();
+        $(".delivery-enter").click(function() {
+          event.preventDefault();
+          var location = $(".delivery-enter .location input").val();
           $(".totalalert .fs-5").show();
           $(".totalalert .location").hide();
-          $(".totalalert .fs-5 span").html(location);
+          $(".totalalert .fs-5 #address").html(location);
         });
     
 
