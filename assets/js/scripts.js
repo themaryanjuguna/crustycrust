@@ -50,6 +50,7 @@ $(document).ready(function() {
           $(".totalalert").show();
           $(".totalalert .fs-3").show();
           $(".totalalert .fs-4 .fs-5").hide();
+          $(".totalalert .nothankyou .fs-3").hide();
           $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
@@ -64,7 +65,8 @@ $(document).ready(function() {
           $(".totalalert .fs-4").show();
           $(".yesbutton").hide();
           $(".nobutton").hide();
-          $(".location").hide()
+          $(".location").hide();
+          $(".totalalert .nothankyou .fs-3").hide();
           $(".totalalert .fs-5").hide();
           $(".deliverybutton").show();
           $(".totalalert .fs-4 span").html(totalAmount + 500);
@@ -83,10 +85,10 @@ $(document).ready(function() {
 
         $(".delivery-enter").click(function() {
           event.preventDefault();
-          var location = $(".delivery-enter input").val();
+          var location = $(".delivery-enter .location input").val();
           $(".totalalert .fs-5").show();
           $(".totalalert .location").hide();
-          $(".totalalert h4").html(location);
+          $(".totalalert .fs-3 strong").html(location);
         });
     
 
