@@ -50,7 +50,7 @@ $(document).ready(function() {
           $(".totalalert").show();
           $(".totalalert .fs-3").show();
           $(".totalalert .fs-4 .fs-5").hide();
-          $(".totalalert .nothankyou .fs-3").hide();
+          $(".nothankyou").hide();
           $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
@@ -66,7 +66,7 @@ $(document).ready(function() {
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".location").hide();
-          $(".totalalert .nothankyou .fs-3").hide();
+          $(".nothankyou").hide();
           $(".totalalert .fs-5").hide();
           $(".deliverybutton").show();
           $(".totalalert .fs-4 span").html(totalAmount + 500);
