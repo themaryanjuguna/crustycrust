@@ -72,20 +72,21 @@ $(document).ready(function() {
 
         $(".nobutton").click(function() {
           $(".totalalert .fs-3").show();
+          $(".nothankyou .fs-3").show();
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".location").hide();
           $(".totalalert .fs-4").hide();
           $(".totalalert .fs-5").hide();
-          $(".totalalert .fs-3 span", '<p>Thank you for your Order</p>').show();
+          $(".totalalert .fs-3 span").show();
         });
 
         $(".delivery-enter").click(function() {
           event.preventDefault();
-          var location = $(".delivery-enter .location input").val();
+          var location = $(".delivery-enter input").val();
           $(".totalalert .fs-5").show();
           $(".totalalert .location").hide();
-          $(".totalalert .fs-5 #address").html(location);
+          $(".totalalert h4").html(location);
         });
     
 
