@@ -47,7 +47,7 @@ $(document).ready(function() {
         $(".btn.checkout").click(function() {
           $(".btn.add-pizza").hide();
           $(".btn.checkout").hide();
-          $(".totalalert fs-4").show();
+          $(".totalalert .fs-4").show();
           $(".location").show();
           $(".yesbutton").show();
           $(".nobutton").show();
@@ -59,18 +59,17 @@ $(document).ready(function() {
 
 
         $(".yesbutton").click(function() {
-          $(".totalalert fs-4").hide();
+          $(".totalalert .fs-4").hide();
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".location").hide()
-          $(".totalalert .fs-4").show();
+          $(".totalalert .fs-5").show();
           $(".deliveryaddress").show();
-
-          $(".totalalert fs-4 span").html(totalAmount + 500);
+          $(".totalalert .fs-4 span").html(totalAmount + 500);
         });
 
         $(".nobutton").click(function() {
-          $(".totalalert fs-3").hide();
+          $(".totalalert .fs-3").show();
           $(".yesbutton").hide();
           $(".nobutton").hide();
           $(".totalalert .fs-4").hide();
